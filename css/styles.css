@@ -43,3 +43,10 @@ body{
 .women{
   padding: 50px;
 }
+
+.about{
+  background-image: url("assets/backgrounds/about.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
