@@ -57,7 +57,7 @@ body{
 
 #field{
   border: 2px solid #d8be82;
-  padding: 50px 100px;
+  padding: 50px 150px;
   text-align: center;
 }
 
@@ -71,6 +71,5 @@ body{
 .social{
   background-color: #333333;
   color: white;
-  text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
