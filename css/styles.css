@@ -60,3 +60,12 @@ body{
   padding: 50px 100px;
   text-align: center;
 }
+
+.sale{
+  text-align: center;
+  background-color: #666666;
+}
+
+.social{
+  background-color: #333333;
+}
