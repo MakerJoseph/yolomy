@@ -14,3 +14,24 @@ body{
 .shop{
   text-align: right;
 }
+
+.clothing{
+  text-align: center;
+  padding-top: 150px;
+}
+
+.select{
+  padding: 50PX;
+  background-color: #d1a86c;
+}
+
+.right{
+  float: right;
+  text-align: right;
+}
+
+#btn{
+  background-color: maroon;
+  color: white;
+  width: 200px;
+}
