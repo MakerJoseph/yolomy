@@ -22,7 +22,7 @@ body{
 
 .select{
   padding: 50PX;
-  background-color: #d1a86c;
+  background-color: #d8be82;
 }
 
 .right{
@@ -38,4 +38,8 @@ body{
 
 .men{
   padding: 50px;
+}
+
+#men-row{
+
 }
