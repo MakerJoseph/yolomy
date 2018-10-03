@@ -33,7 +33,9 @@ body{
 #btn{
   background-color: maroon;
   color: white;
-  width: 200px;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
 }
 
 .men{
@@ -45,8 +47,16 @@ body{
 }
 
 .about{
-  background-image: url("assets/backgrounds/about.jpg");
+  background-image: url("../assets/backgrounds/about.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   height: 400px;
+  padding: 100px 200px;
+  color: white;
+}
+
+#field{
+  border: 2px solid #d8be82;
+  padding: 50px 100px;
+  text-align: center;
 }
