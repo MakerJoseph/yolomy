@@ -50,7 +50,7 @@ body{
   background-image: url("../assets/backgrounds/about.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 403px;
   padding: 100px 200px;
   color: white;
 }
@@ -64,8 +64,13 @@ body{
 .sale{
   text-align: center;
   background-color: #666666;
+  color: white;
+  padding: 10px;
 }
 
 .social{
   background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
