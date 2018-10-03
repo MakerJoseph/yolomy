@@ -1,0 +1,16 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.home{
+  background-image: url("../assets/backgrounds/hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 800px;
+  padding: 50px;
+  color: white;
+}
+
+.shop{
+  text-align: right;
+}
