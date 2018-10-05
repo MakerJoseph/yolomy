@@ -6,7 +6,7 @@ A online fashion store that sells fashion that is crafted by special designers. 
 ## Setup/Installation Requirements
 * Clone repository from Github
 * Open Chrome browser
-* Use the link
+* Use this link https://makerjoseph.github.io/yolomy/
 
 ## Known Bugs
 
