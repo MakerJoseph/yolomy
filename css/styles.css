@@ -1,5 +1,5 @@
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .home{
@@ -34,8 +34,6 @@ body{
   background-color: maroon;
   color: white;
   padding: 10px;
-  text-decoration: none;
-  border: none;
 }
 
 .men{
@@ -72,4 +70,9 @@ body{
   background-color: #333333;
   color: white;
   padding: 40px;
+}
+
+#display-products{
+  display: none;
+  font-weight: bold;
 }

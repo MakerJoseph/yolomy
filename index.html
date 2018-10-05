@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <meta charset="utf-8">
     <title>Yolomy</title>
   </head>
@@ -30,110 +36,113 @@
     <div class="select">
       <div class="row">
         <div class="col left">
-          <form class="" action="index.html" method="post">
-            <input type="checkbox" name="" value="">
-            <label for="">MEN</label>
-            <input type="checkbox" name="" value="">
-            <label for="">WOMEN</label>
-            <input type="checkbox" name="" value="">
-            <label for="">CHILDREN</label>
+          <form class="" action="index.html" method="">
+            <input type="checkbox" name="men-check">
+            <label for="men">MEN</label>
+            <input type="checkbox" name="women-check">
+            <label for="women">WOMEN</label>
+            <input type="checkbox" name="" id="children">
+            <label for="children">CHILDREN</label>
           </form>
         </div>
         <div class="col right">
-          <button type="button" name="button" id="btn">SEE ALL PRODUCTS</button>
+          <input type="button" name="" value="SEE ALL PRODUCTS" id="btn" onclick="show()"/>
         </div>
       </div>
     </div>
 
-    <div class="men">
-      <p>MEN</p>
-      <div class="row" id="men-row">
-        <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
-          <p>SIZE</p>
-          <center><img src="assets/products/tshirt.png" alt=""></center>
-          <!--a row to store product tag and price-->
-          <div class="row" style="bottom: 0; position: absolute;">
-            <div class="col" style="width: 300px;">
-              <p style="color: #d8be82;">T-SHIRT</p>
+    <div id="display-products">
+      <div class="men">
+        <p>MEN</p>
+        <div class="row" id="men-row">
+          <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
+            <p>SIZE</p>
+            <center><img src="assets/products/tshirt.png" alt=""></center>
+            <!--a row to store product tag and price-->
+            <div class="row" style="bottom: 0; position: absolute;">
+              <div class="col" style="width: 300px;">
+                <p style="color: #d8be82;">T-SHIRT</p>
+              </div>
+              <div class="col" style="right: 0;">
+                <p>5,00€</p>
+              </div>
             </div>
-            <div class="col" style="right: 0;">
-              <p>5,00€</p>
+          </div>
+          <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
+            <p>SIZE</p>
+            <center><img src="assets/products/pants.png" alt=""></center>
+            <!--a row to store product tag and price-->
+            <div class="row" style="bottom: 0; position: absolute;">
+              <div class="col" style="width: 300px;">
+                <p style="color: #d8be82;">PANTS FORCLAZ</p>
+              </div>
+              <div class="col" style="right: 0;">
+                <p>30,00€</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
+            <p>10LITRI</p>
+            <center><img src="assets/products/backpack.png" alt=""></center>
+            <!--a row to store product tag and price-->
+            <div class="row" style="bottom: 0; position: absolute;">
+              <div class="col" style="width: 300px;">
+                <p style="color: #d8be82;">BACKPACK</p>
+              </div>
+              <div class="col" style="right: 0;">
+                <p>60,00€</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
-          <p>SIZE</p>
-          <center><img src="assets/products/pants.png" alt=""></center>
-          <!--a row to store product tag and price-->
-          <div class="row" style="bottom: 0; position: absolute;">
-            <div class="col" style="width: 300px;">
-              <p style="color: #d8be82;">PANTS FORCLAZ</p>
-            </div>
-            <div class="col" style="right: 0;">
-              <p>30,00€</p>
+      </div>
+
+      <div class="women">
+        <p style="text-align: right;">WOMEN</p>
+        <div class="row" id="women-row">
+          <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
+            <p>SIZE</p>
+            <center><img src="assets/products/giacket.png" alt=""></center>
+            <!--a row to store product tag and price-->
+            <div class="row" style="bottom: 0; position: absolute;">
+              <div class="col" style="width: 300px;">
+                <p style="color: #d8be82;">GIACKET</p>
+              </div>
+              <div class="col" style="right: 0;">
+                <p>60,00€</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
-          <p>10LITRI</p>
-          <center><img src="assets/products/backpack.png" alt=""></center>
-          <!--a row to store product tag and price-->
-          <div class="row" style="bottom: 0; position: absolute;">
-            <div class="col" style="width: 300px;">
-              <p style="color: #d8be82;">BACKPACK</p>
+          <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
+            <p>SIZE</p>
+            <center><img src="assets/products/trekkingshoes.png" alt=""></center>
+            <!--a row to store product tag and price-->
+            <div class="row" style="bottom: 0; position: absolute;">
+              <div class="col" style="width: 300px;">
+                <p style="color: #d8be82;">TREKKING SHOES</p>
+              </div>
+              <div class="col" style="right: 0;">
+                <p>80,00€</p>
+              </div>
             </div>
-            <div class="col" style="right: 0;">
-              <p>60,00€</p>
+          </div>
+          <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
+            <p>SIZE</p>
+            <center><img src="assets/products/tshirt_ladies.png" alt=""></center>
+            <!--a row to store product tag and price-->
+            <div class="row" style="bottom: 0; position: absolute;">
+              <div class="col" style="width: 300px;">
+                <p style="color: #d8be82;">T-SHIRT</p>
+              </div>
+              <div class="col" style="right: 0;">
+                <p>20,00€</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="women">
-      <p style="text-align: right;">WOMEN</p>
-      <div class="row" id="women-row">
-        <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
-          <p>SIZE</p>
-          <center><img src="assets/products/giacket.png" alt=""></center>
-          <!--a row to store product tag and price-->
-          <div class="row" style="bottom: 0; position: absolute;">
-            <div class="col" style="width: 300px;">
-              <p style="color: #d8be82;">GIACKET</p>
-            </div>
-            <div class="col" style="right: 0;">
-              <p>60,00€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
-          <p>SIZE</p>
-          <center><img src="assets/products/trekkingshoes.png" alt=""></center>
-          <!--a row to store product tag and price-->
-          <div class="row" style="bottom: 0; position: absolute;">
-            <div class="col" style="width: 300px;">
-              <p style="color: #d8be82;">TREKKING SHOES</p>
-            </div>
-            <div class="col" style="right: 0;">
-              <p>80,00€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="width: 300px; height: 350px; padding: 10px; margin: 40px; background-color: #e0ddd5;">
-          <p>SIZE</p>
-          <center><img src="assets/products/tshirt_ladies.png" alt=""></center>
-          <!--a row to store product tag and price-->
-          <div class="row" style="bottom: 0; position: absolute;">
-            <div class="col" style="width: 300px;">
-              <p style="color: #d8be82;">T-SHIRT</p>
-            </div>
-            <div class="col" style="right: 0;">
-              <p>20,00€</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="about">
       <fieldset id="field">
